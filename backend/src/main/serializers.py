@@ -6,4 +6,4 @@ from .models import YouTubeVideo
 class YouTubeVideoSerializer(serializers.ModelSerializer):
     class Meta:
         model = YouTubeVideo
-        fields = '__all__'
+        fields = ['title', 'channel']
