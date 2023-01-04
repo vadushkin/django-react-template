@@ -10,4 +10,7 @@ RUN poetry install
 
 COPY . /usr/src/app
 
-CMD ["poetry", "run", "python", "src/manage.py", "runserver", "0.0.0.0:8000"]
+ENTRYPOINT ["poetry", "run"]
+
+CMD ["python", "src/manage.py", "migrate"]
+CMD ["python", "src/manage.py", "runserver", "0.0.0.0:8000"]
