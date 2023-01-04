@@ -10,6 +10,17 @@ Installation
 Start
 -----
 
+Create file `backend/.env` or delete `.example` in the `backend/.env.example` file
+
+Fill in the data in the file `.env`
+
+```dotenv
+SECRET_KEY=KEY
+DEBUG='1 - True, 0 - False'
+ALLOWED_HOSTS=localhost,127.0.0.1,etc...
+```
+
+### Run
 ```
 docker-compose up
 ```
